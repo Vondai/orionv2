@@ -3,7 +3,7 @@ import PostListingFilterBtns from './PostListingFilterBtns';
 
 const Posts = () => {
   return (
-    <section className='flex w-3/5 flex-col gap-4'>
+    <section className='flex w-3/5 flex-col'>
       <div>
         <PostListingFilterBtns />
       </div>

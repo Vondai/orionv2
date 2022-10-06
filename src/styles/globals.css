@@ -5,3 +5,7 @@
 .btn-post-filter {
   @apply btn flex items-center gap-2 rounded-xl px-4 py-2 text-base;
 }
+
+.btn-community-cta {
+  @apply btn w-full rounded-lg bg-primary px-6 text-primary-content hover:bg-primary-content hover:text-primary;
+}
