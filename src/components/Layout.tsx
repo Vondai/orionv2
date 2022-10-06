@@ -6,7 +6,7 @@ const Layout = ({ children }: { children?: ReactNode }) => {
   return (
     <>
       <Navbar />
-      <main>{children}</main>
+      <main className='flex justify-between p-4'>{children}</main>
       <Footer />
     </>
   );

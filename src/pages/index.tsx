@@ -1,6 +1,7 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import Layout from '../components/Layout';
+import TopCommunities from '../components/Communities/TopCommunities';
+import Posts from '../components/Posts/Posts';
 import { trpc } from '../utils/trpc';
 
 const Home: NextPage = () => {
@@ -17,7 +18,8 @@ const Home: NextPage = () => {
           href='/favicon.ico'
         />
       </Head>
-      <Layout></Layout>
+      <Posts />
+      <TopCommunities />
     </>
   );
 };
