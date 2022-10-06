@@ -2,9 +2,9 @@ import CommunityListingItem from './CommunityListingItem';
 
 const TopCommunities = () => {
   return (
-    <aside className='flex flex-col items-center'>
+    <aside className='flex h-fit flex-col items-center gap-3 rounded-lg bg-base-200 p-6'>
       <section>
-        <p className='text-center text-lg font-semibold'>
+        <p className='text-center text-2xl font-semibold'>
           Most subscribed communities
         </p>
       </section>

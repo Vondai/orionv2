@@ -3,12 +3,16 @@ import PostListingFilterBtns from './PostListingFilterBtns';
 
 const Posts = () => {
   return (
-    <section>
-      <PostListingFilterBtns />
-      <PostListing />
-      <PostListing />
-      <PostListing />
-      <PostListing />
+    <section className='flex w-3/5 flex-col gap-4'>
+      <div>
+        <PostListingFilterBtns />
+      </div>
+      <div>
+        <PostListing />
+        <PostListing />
+        <PostListing />
+        <PostListing />
+      </div>
     </section>
   );
 };

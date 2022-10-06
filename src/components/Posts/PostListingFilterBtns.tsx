@@ -2,26 +2,59 @@ import Link from 'next/link';
 
 const PostListingFilterBtns = () => {
   return (
-    <article className='mb-3 flex justify-evenly font-bold'>
-      <div className='btn-post-filter'>
-        <i className='fab fa-hotjar'></i>
+    <>
+      <article className='flex justify-evenly rounded-lg bg-red-400 py-4 font-bold'>
         <Link
-          className=''
           href='/posts/hot'
+          passHref={true}
         >
-          Hot
+          <a className='btn-post-filter'>
+            <svg
+              xmlns='http://www.w3.org/2000/svg'
+              fill='none'
+              viewBox='0 0 24 24'
+              stroke-width='1.5'
+              stroke='currentColor'
+              className='h-6 w-6'
+            >
+              <path
+                stroke-linecap='round'
+                stroke-linejoin='round'
+                d='M15.362 5.214A8.252 8.252 0 0112 21 8.25 8.25 0 016.038 7.048 8.287 8.287 0 009 9.6a8.983 8.983 0 013.361-6.867 8.21 8.21 0 003 2.48z'
+              />
+              <path
+                stroke-linecap='round'
+                stroke-linejoin='round'
+                d='M12 18a3.75 3.75 0 00.495-7.467 5.99 5.99 0 00-1.925 3.546 5.974 5.974 0 01-2.133-1A3.75 3.75 0 0012 18z'
+              />
+            </svg>
+            Hot
+          </a>
         </Link>
-      </div>
-      <div className='btn-post-filter'>
-        <i className='fas fa-certificate'></i>
         <Link
-          className=''
           href='/posts/new'
+          passHref={true}
         >
-          New
+          <a className='btn-post-filter'>
+            <svg
+              xmlns='http://www.w3.org/2000/svg'
+              fill='none'
+              viewBox='0 0 24 24'
+              stroke-width='1.5'
+              stroke='currentColor'
+              className='h-6 w-6'
+            >
+              <path
+                stroke-linecap='round'
+                stroke-linejoin='round'
+                d='M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z'
+              />
+            </svg>
+            New
+          </a>
         </Link>
-      </div>
-    </article>
+      </article>
+    </>
   );
 };
 
